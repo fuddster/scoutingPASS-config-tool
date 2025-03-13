@@ -30,6 +30,6 @@ jobs:
     - name: Deploy
       uses: fuddster/scoutingPASS-config-tool@main
       with:
-      github_token: ${{ secrets.GITHUB_TOKEN }}
-      publish_dir: ./public
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
             
