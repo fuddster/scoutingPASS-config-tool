@@ -28,7 +28,7 @@ jobs:
         grunt
 
     - name: Deploy
-      uses: fuddster/actions-gh-pages@main
+      uses: fuddster/scoutingPASS-config-tool@main
       with:
       github_token: ${{ secrets.GITHUB_TOKEN }}
       publish_dir: ./public
