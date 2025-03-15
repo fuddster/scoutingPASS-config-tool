@@ -1,10 +1,6 @@
 name: NodeJS with Grunt
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -12,20 +8,26 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [22.x]
+        node-version: [18.x, 20.x, 22.x]
 
     steps:
     - uses: actions/checkout@v4
+
+    - run: echo "---Finish checkout"
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
 
+    - run: echo "---Finish node setup"
+
     - name: Build
       run: |
         npm install
         grunt
+
+    - run: echo "---Finish build"
 
     - name: Deploy
       uses: fuddster/scoutingPASS-config-tool@main
