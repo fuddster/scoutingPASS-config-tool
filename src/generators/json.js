@@ -51,7 +51,7 @@ jsonGenerator.forBlock['small_header'] = function (block, generator) {
 };
 jsonGenerator.forBlock['bool'] = function (block, generator) {
   const text = block.getFieldValue('NAME');
-  const key = block.getFieldValue('CODE');
+  const key = block.getFieldValue('KEY');
   const code = `{\n"type": "bool",\n"label": "${text}",\n"id": "${keyGen(key)}"\n}`;
   return code;
 };

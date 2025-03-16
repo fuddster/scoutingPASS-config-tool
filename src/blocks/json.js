@@ -96,7 +96,7 @@ export const blocks = Blockly.common.createBlockDefinitionsFromJsonArray([
       },
       {
         type: 'field_input',
-        name: 'CODE',
+        name: 'KEY',
         text: '',
       },
     ],
