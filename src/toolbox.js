@@ -37,6 +37,17 @@ export const toolbox = {
         },
       ],
     },
+    {
+      kind: 'category',
+      name: 'Boolean',
+      colour: 180,
+      contents: [
+        {
+          kind: 'block',
+          type: 'bool',
+        },
+      ],
+    },
 
     {
       kind: 'category',
