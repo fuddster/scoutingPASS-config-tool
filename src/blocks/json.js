@@ -86,6 +86,25 @@ export const blocks = Blockly.common.createBlockDefinitionsFromJsonArray([
   },
 
   {
+    type: 'bool',
+    message0: 'Boolean with text: %1 and key: %2',
+    args0: [
+      {
+        type: 'field_input',
+        name: 'NAME',
+        text: '',
+      },
+      {
+        type: 'field_input',
+        name: 'CODE',
+        text: '',
+      },
+    ],
+    previousStatement: null,
+    nextStatement: null,
+    colour: 180,
+  },
+  {
     type: 'checkbox',
     message0: 'Checkbox with text: %1 and key: %2',
     args0: [
