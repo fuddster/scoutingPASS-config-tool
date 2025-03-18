@@ -9,7 +9,7 @@
  * generator codelab.
  */
 
-import keyGen from'../utils/keyGen'
+import keyGen from'./keyGen'
 import * as Blockly from 'blockly';
 export const jsonGenerator = new Blockly.Generator('JSON');
 

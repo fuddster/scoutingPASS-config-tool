@@ -5,8 +5,8 @@
  */
 
 // import * as Blockly from 'blockly';
-import {blocks} from './blocks/scouting_blocks';
-import {jsonGenerator} from './generators/scouting_generators';
+import {blocks} from './scouting_blocks';
+import {jsonGenerator} from './scouting_generators';
 import {save, load} from './serialization';
 import {toolbox} from './toolbox';
 import './index.css';
